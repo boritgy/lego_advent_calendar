@@ -11,4 +11,4 @@ with open('days.json', 'r') as file:
 filename = data.get(password)
 
 if filename:
-    st.pdf(f'files\\{filename}')
+    st.pdf(f'./files/{filename}')
