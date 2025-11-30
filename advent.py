@@ -8,7 +8,7 @@ password = st.text_input("Jelszó:")
 with open('days.json', 'r') as file:
     data = json.load(file)
 
-filename = data.get(password)
+filename = data.get(password.lower())
 
 if filename:
     st.pdf(f'./files/{filename}')
